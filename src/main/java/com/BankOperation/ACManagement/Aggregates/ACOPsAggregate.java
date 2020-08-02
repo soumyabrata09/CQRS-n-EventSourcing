@@ -35,6 +35,38 @@ public class ACOPsAggregate {
 		//Axon Framework requires a default/no-args Constructor to be explicitly declared
 	}
 	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public Double getAcBalance() {
+		return acBalance;
+	}
+
+	public void setAcBalance(Double acBalance) {
+		this.acBalance = acBalance;
+	}
+
+	public String getCurrency() {
+		return currency;
+	}
+
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
 	@CommandHandler
 	// A/C Creation Command
 	public ACOPsAggregate(ACCreationCommand _acCreationCommand){
