@@ -14,5 +14,4 @@ public class CreditAmountCommand extends BaseCommand<String>{
 		this._creditAmount = creditAmount;
 		this._currency = currency;
 	}
-
 }

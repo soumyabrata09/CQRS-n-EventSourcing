@@ -14,5 +14,4 @@ public class ACCreationCommand extends BaseCommand<String>{
 		this._acBalance = accountBal;
 		this._currency = currency;
 	}
-
 }
