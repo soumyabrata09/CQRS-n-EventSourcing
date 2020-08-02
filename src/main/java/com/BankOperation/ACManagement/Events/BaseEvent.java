@@ -3,7 +3,7 @@
  */
 package com.BankOperation.ACManagement.Events;
 
-import org.axonframework.commandhandling.TargetAggregateIdentifier;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
 /**
  * @author Sam

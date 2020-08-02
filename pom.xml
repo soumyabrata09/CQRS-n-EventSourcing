@@ -31,10 +31,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- AXON -->
 		<dependency>
 			<groupId>org.axonframework</groupId>
 			<artifactId>axon-spring-boot-starter</artifactId>
-			<version>3.2</version>
+			<!-- <version>3.2</version> -->
+			<version>4.0.3</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.axonframework</groupId>
+					<artifactId>axon-server-connector</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
