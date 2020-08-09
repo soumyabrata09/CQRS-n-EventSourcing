@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.BankOperation.ACManagement.Entity.ACQueryEntityModel;
 import com.BankOperation.ACManagement.Services.QueryService.IAccountQueryService;
 
 import io.swagger.annotations.Api;
@@ -32,5 +33,10 @@ public class ACQueryController {
 	@RequestMapping(method = RequestMethod.GET, value = "{accNumber}/events")
 	public List<Object> eventLists(@PathVariable(value = "accNumber") String accNumber){
 		return accountQueryService.listACEvents(accNumber);
+	}
+	
+	@RequestMapping(method = RequestMethod.GET, value = "{accNumber}")
+	public ACQueryEntityModel getAccount(@PathVariable("accNumber") String accNumber) {
+		return accountQueryService.getAccount(accNumber);
 	}
 }

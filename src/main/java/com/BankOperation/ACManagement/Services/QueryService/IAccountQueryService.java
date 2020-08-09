@@ -5,6 +5,8 @@ package com.BankOperation.ACManagement.Services.QueryService;
 
 import java.util.List;
 
+import com.BankOperation.ACManagement.Entity.ACQueryEntityModel;
+
 /**
  * @author Sam
  *
@@ -12,5 +14,6 @@ import java.util.List;
 public interface IAccountQueryService {
 
 	public List<Object> listACEvents(String acNumber);
+	public ACQueryEntityModel getAccount(String ACNumber);
 	
 }
